@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="1MHHsicnpU2wHRbBUR172Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1017, 0, 903, 1040" BrowserType="Firefox" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABJSURBVDhPYxjG4D8rx3EgfksIQ5VjAqDkDSD+TwhDlWMCoCRxBvxn4bTGilk5HqIrxoZBNmGVIBaPGgAxAGsCIRZDY33oAgYGAKMAGyx02o4QAAAAAElFTkSuQmCC" Selector="&lt;html app='firefox.exe' title='Московская Биржа' /&gt;" Url="https://www.moex.com/">
+      <imageRef attrName="InformativeScreenshot" originalValue="4b02ad2894cc2b754ccaabe65aa65420.png" xmlns="">0iB74sF6ANEqicQBjfyCAVQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

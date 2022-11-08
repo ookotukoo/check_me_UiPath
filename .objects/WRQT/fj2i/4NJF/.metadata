@@ -1,0 +1,14 @@
+﻿{
+  "Id": "4NJFEj4uNUa78Dq11wu9iA",
+  "Reference": "W29ZBOKzbkGJbCbEg3DhPA/4NJFEj4uNUa78Dq11wu9iA",
+  "ParentRef": "W29ZBOKzbkGJbCbEg3DhPA/fj2ilzJ5U0KvqKcCR6RGnw",
+  "Name": "Firefox Московская Биржа",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2022-11-07T22:15:04.3915966Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-11-07T22:15:04.3915966Z"
+}

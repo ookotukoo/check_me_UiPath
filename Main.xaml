@@ -1,0 +1,264 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1217,2641" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="80">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,2576" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dttable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dttable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,69" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;data_USD_RUB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;currency_USD_RUB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Time_UDS_RUB&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;5&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_JPY_RUB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Currency_JPY_RUB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;time_JPY_RUB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Result&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName /&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Firefox: Московская Биржа" sap:VirtualizedContainerService.HintSize="434,1967" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" ScopeGuid="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="400,1740" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'USE /assets/icons.svg#m…'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/" DesignTimeRectangle="784, 103, 24, 24" DesignTimeScaleFactor="1" FriendlyName="'USE /assets/icons.svg#m…'" FullSelectorArgument="&lt;webctrl href='/assets/icons.svg#menu-line' tag='use' /&gt;" FuzzySelectorArgument="&lt;webctrl href='/assets/icons.svg#menu-line' tag='use' type='' class='' aaname='' /&gt;" Guid="47879c7d-13f4-45cb-94d2-1dc8d4204111" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVEhLY/hPZzBqIdXBqIVUBxgWBgYG/5eQlKYKDgoKgZqKADS1EGQWOhhNNFQHA2/haCqlFIxaSHVA00QzmkrpAkYtpDoY7hb+/w8Ah0v5VHBDCQkAAAAASUVORK5CYII=" InformativeScreenshot="549200b647ca6be640f33c391fa7abe0.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Московская Биржа' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Срочный рынок'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/" DesignTimeRectangle="352, 222, 151, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Срочный рынок'" FullSelectorArgument="&lt;webctrl aaname='Срочный рынок' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' parentid='moex-burger_markets' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Срочный рынок' type='' parentid='moex-burger_markets' tag='A' class='' check:innerText='Срочный рынок' /&gt;" Guid="74e6cc5f-860b-4da3-9c30-5c7ec288f61f" ImageBase64="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" InformativeScreenshot="6a0315fd0a78308b9591d0137b2f8b82.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Московская Биржа' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Срочный рынок'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/" DesignTimeRectangle="401, 413, 120, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Срочный рынок'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' class='' aaname='Срочный рынок' check:innerText='Срочный рынок' /&gt;" Guid="d2c4013e-e17f-4735-8bf1-b36777530123" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAcCAYAAACj6tvkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATfSURBVGhD7VlNSBVRFG4jPBBKVCL8QSGQpIikIpCIpIh+H4SEuJAgJNKFK1vYwsAMok24eIKQ2cagn4VFQVFQLaKM18KFgQuDF7Z4Brpy8Van79w5M+/Ofdfn+NLImfngMt47Z+6c8333nnvmuY1iRAqx4BFDLHjEEAseMcSCRwyx4BFDLHjEsIrgOaKFr0TjD4gevydaXJHxMIFjzBAt48pY+U2UQQs5CgX/fJuobjtRWUJr5UTHMB4q3ZeI2hBb2wi0h+j9zUQVl+VeeOEXPH2DKAESdh0nej7rCLyI6/A5Z/zwXccuLEgjnoZKZ1FXtRBNLcqN8EITfB6CYidXnCfKypCOW4dATB3RB+nrCJIOF5E+F5alEwZgN2QQ07/Oen/JY17wGexuXukDMzJgIDvtnOk/uAObJtieHSLq2CNpH628gSg1p8w9mEcEZ4+32k4aQCotuygdgW9M3pV8JH3BJO6Xwc511+z7YM6Bqxlr9iEWu/g4KWMmlF/YEBOdiFVsyxBbclSVBA4sc+sw47XFb5tjLR4L4se9nv3IzDXwd0HGdMHVA1VEL6VfFEIgv7gVC2UWqy6DIu/kTow1IgtI9PNImXwUtMJZ3g1scwYOJOCI69h/ITj87YLvFYifx4sKjvvVR50jj2O6d8oZ6/koRpsgeBAeffEj7fSz2LsLjilD8NUIMwEjJrACz6D28ZCbcnZJ1yun34MjIAFCfDbviGpg45K/oYI3Eb1mQqR56dacwyA0fR19CH6HrxgvKjgWxaQvIKJOjHkFn8zd+ybvh/6VU4rgQXj0+IA/A3axGYbgOMOfSL8ohMA2pDIfpPLdexN/f8cVf9sKvSTGm5AZGKkTeC8IG5UikWETvByC1NbnWxWnNw5QzJT/sPM12Ax+w02Zwyq41C58zz3WigoOf3XiGSoGkIyQvbnNdgCccOKzCg4/9dhqOVPiGeVfQB7dBd9+0Hm2CYtXEq2OvOA/MSEbdmPl2DAzRnSpg+iT6jgEboTgS09xHoFwlxivGYK3XHNqCLdd5SLSFFzr53BuJZk4FkjmsAnOzyWOKN03VHB3dzLrE+wbxlJ40Co4YtFjG0es3hzrERx9TvN9csz082L3Iy84R5HETuMH0ubSQJ/POI9QIbAgzRgpvQ/n+VqpyMXyr3wK7MVKNQU37U2BzT5jAgWWGjPnEFH6QWI1ru75G0hwLM4xX0D2lO4JDuRQELpjVsG1voIxRxAeVfxI/c84jbt6afWUQBMcyOJhJoAru74RommQ/wLX0zgP2IF27EYFIZDHzKJNLySyyACq2ChiY4OPBHlXIMG1M3z6PlEjxKnuxk1zDiGUi7RqCOVyEkhw3C8o2vCeQdcRmds7wxFzO/OHuDFUkuBBeDT5yGER17OvWnyAX3DGyheiC/ucF/BLufHn1oCe6oVA/izjatG124HnzEJhrc8JG0oWXN6hGkRoxufTHEdrziGEsk1K8yWQ4MgaKfkhim0TlURXkNk8uHNrjXmZkM/VUgRnrPuzDFDFKGw78/4VCu4BFRSvUOtHvkEgp+O1fgwIww8vujg5xJJB3P6MufnYsB9e1gVzx0QE1t24tRALvh5EV3DkMf7XYij/bVoE6ktia/8LtUTBY2xV5AUfGo6vYb4K4h0eMcSCRwyx4JEC0R+3cbCXDFiPQwAAAABJRU5ErkJggg==" InformativeScreenshot="8c9c1b2c86315d64c9a7389fbb8feba1.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Срочный рынок — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Индикативные курсы'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/" DesignTimeRectangle="118, 591, 142, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Индикативные курсы'" FullSelectorArgument="&lt;webctrl aaname='Индикативные курсы' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Индикативные курсы' tag='SPAN' type='' class='' check:innerText='Индикативные курсы' /&gt;" Guid="44ff088e-21fd-4f8d-9878-63701e5d3ec5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAVCAYAAACtzrfuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAXFSURBVGhD7VndS1xHFO+fsbLrYrQuthpXoakaJTSmIbSxppoWLdFATNE2ISpptI0GG1iWppAtVR/6AV1IYpWCQj6MoQZSpCRtEx82NKEIggkr68P6sD50H+7Lr2c+7t25d6+7fqxpC/cHgzszZ2bOOfObc2auL8GBgxzAIZKDnMAhkoOcwCGSg5zAIZKDnMAhkoOcwESk6W4/yrpvy5qOOK60UftuP85MyyYHDiwwEWmy3Q1X+5SsCSRudMCXR+1U2iZlowMHFmQmkvYA5yrc8L/bhNf+k0RKYjW6goQmq/87aEisRLGalNWdRHIV0QwLJVejiK1t3ZEZifQkUAOX7zRmI0FUKUTi7dVBPBFVDtuxMpKlynHoXLTKJyaPo5DJ6G1P2Zo1CDwVVS02gTafF7V99xDTNCyG21Hu1ectwBsDc5SE11tX6m6ZkxoQqGb9etsU2izj8v1HMRwRDs5qd9r8KVjtjc8F0fCqV65TgNd77nD905DBDws/kc88hzC8JPo4ElfR7ClG54wm9f0Y59sqkG/Y04nxWIow2mIYx/wFKXurejEjFbHqbMDGzvWJtDSKN0mhlgmalQ/cApFUGSLKukTika8YhUVKm6psnDaYO0+QBcukWx7pdi1GZ5pO0/wFki1B9y+sU8JuUy1t8XAT3EW0rtEmiGREXi2G0cNuuE/c4NWcESkexhEP2fP5PMVUtswYWoq8aL6SEP0qMvkBj3CeZYyBR7zGsBQ6AFfRRyAeCX3JHn/XTTp81Jmcx1CdF+6Do+DckxnH1z5h7ic9WdW6pwZs7FyHSHGMtxanFuQDLUTa8ynuRaOIyvLde+ZFN0MkJsvWCtltyhxznhtVvbrzVIjUEI3+jLPkkNpLC7KdYLepaluC5i0qwamRi4qcmUja2u8YoIilb1RWu/n8xdj7/ofoOEmlO4ipv0Q6Ue1dHjkE165GXPhxHGOynK03+89AFj+oxCFhHmFN+nrI57xP4n4/SvP24QvmqtnTdIgooi2LLobE42mM3XoMRmmuc8VbwhYqn337hyCcjW9tiaTRAj5VkA+0EInqaUVxxIaJxE9nDYYofajO1jfF5ytAvpdOSV0QMsMQ4pjpqcMuD0WLwlJ6UZby31WqZTbGpto03O+rRGHrBOImOUEkk017z+FXuXNZ7eZzlaP1MiPH9wgcq6aUQmSdNdsmNvhllNBLmL2GjZL2YiZk9ANBu4NOiuT7Q88oQA3Cn3cAIZnq0vaAQbXXsidWcJ3rPxFk/6oX9ZSKeXAx+UwgnUit/eKC3feAhzcOPnALqa3uSxgxwpZIYfpLTjp1Nz2U8jVl+Odpln4HIkInekm6yZCBef3yGMHQnk0QaZL+6ncLk5w5IlGsp6UoMr/9DdihzWp32poiQjC9VDkekYwokgWZ/CDxcKCSIkc/Al2k69GrPJowCMLaRSQZhTYSkZQ9NfbQxrfpRCJF3b4OXFfTNR+4CSLR3eIapcZCIogBOyJVVMLvacIP8sSb5rAoy+8znn0IsOMoicSiGOUf/BY6zD9RbIxI5fBXeFMHxSRnIZK0w0WncPNEorT752UcJH+yu49JTr8j8YcDW+YWuix3HQOZ/KCDz0fzE+HUexbXl+zJfkcaw3N2JjPdkZLPMdXFCDuIhza+TScSKXMkbLmN8IEbJZJNejAVoYC+Vu2llDYmxdOUFfc2V/VFRP6OYPidMiKTmOOVE0H0ypNvwMZY3Q6XelBMcum6b/7Vpoyn9FUjX2MmOYL11VbePGpOWToy+cGQ1zBD0cga5YS+9Gpr0X1lfpUxZH21yXbep/vCxrcmIuUG1vSgwEaB7UBbW9nWt49/H7n6jvQMIbqsWyOaSnzmqxf2HSk3uI0z6/07ZWEEDbsb8bXyuHKwDSxfxyB7UX2wn1J76pKtwy6C7hR2gEgOXhh0Ip3sQeDmorjzKVgYbkRZw0jqwbODcIjkICdwiOQgBwD+AdRQAMD60IXbAAAAAElFTkSuQmCC" InformativeScreenshot="0934411893ed5093f945167ccc1713af.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Срочный рынок — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item '8'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="1" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="112, 750, 44, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'8'" FullSelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="4c195716-b87b-4a3a-b478-b52076a1e712" InformativeScreenshot="ec8dee027b8c68b92f5d3543665e4851.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item '8'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="1" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="112, 506, 44, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'8'" FullSelectorArgument="&lt;webctrl idx='2' parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='currency-rate-container' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="1a7c0b3d-70e5-4186-b017-677e0a15ec9f" InformativeScreenshot="39c8f3a7e2ea87e9497f843f94dba783.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Показать'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="109, 542, 62, 20" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Показать'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button80 buttonFF' aaname='Показать' check:text='Показать' /&gt;" Guid="c426cb84-cbc7-4995-992d-2c1e01b82734" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAYCAYAAABOQSt5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFiSURBVFhH7ZQxbsMwDEV7796iQ25QIMgBgnTI5CGbM3nJkiHI7hswlvgpkbZkDwbaBuYHPhDTIkU9M/ogV5SDgBKIz6/vTVrkICAHATkIyEFAMyAaavue+qJvdJisf0+LlkE8rrRLsSOdHw5icAHE/kr3NClPOu9t/H45TmrtLk+sZ/Mazjt0Od53TYqXc0pTO/Two/dGPxWLVoLAGjTMzQKGAhHjcqgYz8D44FzP5J9uo1rlnLxvT+2Jn+1HQKxi0SoQpvHwXjeQfjcxZ9JUPGioFaxqmPejeCXn/4HQE4JmYtO6RopzDf669sC1g9Vy6uu18wRpi35tIop/n+F5PObJ+Pqh1lJODUSaiPGzsmjdHSHkF+4IPea2aeyBd+aAExDlnLzvX4IIFhjRuTm7OWpFYFKD3XZ8YHtIWC7Y2Zw6CFnPLkzdYNEMiG1Y5CAgBwE5CMhBQA4CSiC2LgcRRfQC8ZpExO2AnHoAAAAASUVORK5CYII=" InformativeScreenshot="573eb391a0a8ce86afea594ca963260d.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dttable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Дата' ReferenceName='Дата' ReferenceIdx='0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс промежуточного клиринга Значение' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс промежуточного клиринга Время' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Значение' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Курс основного клиринга Время' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Дата' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Значение' attr='text' /&gt;&lt;column name='Курс промежуточного клиринга Время' attr='text' /&gt;&lt;column name='Курс основного клиринга Значение' attr='text' /&gt;&lt;column name='Курс основного клиринга Время' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e59bf8cb-bdde-4f18-a942-6f176f8cd05b" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="229, 316, 428, 526" DesignTimeScaleFactor="1" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl class='tablels' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="bed9ab2c-f72e-4b8d-a263-1d7cd9c8ce7b" InformativeScreenshot="7e16ce43bc3a38a59d8a872a4fbdc31c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="995, 0, 903, 1040" BrowserType="Firefox" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABJSURBVDhPYxjG4D8rx3EgfksIQ5VjAqDkDSD+TwhDlWMCoCRxBvxn4bTGilk5HqIrxoZBNmGVIBaPGgAxAGsCIRZDY33oAgYGAKMAGyx02o4QAAAAAElFTkSuQmCC" InformativeScreenshot="81f095b29f114107c3fdb6831d3e8eec.png" Selector="&lt;html app='firefox.exe' title='Московская Биржа' /&gt;" Url="https://www.moex.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,338" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\Евгений Жухало\Desktop\EXPORT.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="400,219" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteRange AddHeaders="False" DataTable="[dttable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="338,97" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
